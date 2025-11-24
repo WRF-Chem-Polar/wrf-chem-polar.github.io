@@ -1,5 +1,5 @@
 title: WRF Chem Polar
 description: A modified version of the WRF-Chem model with improvements for polar regions
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: jeffreytse/jekyll-theme-yat
 plugins:
 - jekyll-remote-theme
