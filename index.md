@@ -6,3 +6,4 @@ Blog posts:
     </li>
   {% endfor %}
 </ul>
+Thanks you!
