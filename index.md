@@ -1,4 +1,6 @@
-Blog posts:
+Example of content.
+
+Dev blog:
 <ul>
   {% for post in site.posts %}
     <li>
@@ -6,4 +8,5 @@ Blog posts:
     </li>
   {% endfor %}
 </ul>
-Thanks you!
+
+Content required
