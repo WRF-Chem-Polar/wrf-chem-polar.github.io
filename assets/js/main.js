@@ -1,5 +1,5 @@
 /*
-	Adapted from:
+	Adapted by LATMOS (France, UMR 8190) and IGE (France, UMR 5001) from:
 	  Eventually by HTML5 UP
 	  html5up.net | @ajlkn
 	  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -32,18 +32,42 @@
     // Slideshow Background.
     (function() {
 
+
+        var possible_images = [
+            {
+                "path": "images/Seguinot_meander-melt-water.jpg",
+                "alignment": "center",
+                "credit": "Julien Seguinot (CC-BY-SA-3.0)",
+            },
+            {
+                "path": "images/Sciarra_Antarctica.jpg",
+                "alignment": "center",
+                "credit": "Alessandra Sciarra (CC-BY-3.0)",
+            },
+            {
+                "path": "images/Gilbert_clouds-Antarctica.png",
+                "alignment": "center",
+                "credit": "Ella Gilbert (CC-BY-SA-3.0)",
+            },
+        ];
+
+        var which_image = Math.floor(Math.random() * possible_images.length);
+
 	// Settings.
 	var settings = {
 
 	    // Images (in the format of 'url': 'alignment').
 	    images: {
-		'images/bg01.jpg': 'center',
+		[possible_images[which_image].path]: possible_images[which_image].alignment,
 	    },
 
 	    // Delay.
 	    delay: 9000
 
 	};
+
+        // Credit for the background image
+        document.getElementById("ID_bg-image-credit").innerHTML = "Background image: &copy; " + possible_images[which_image].credit;
 
 	// Vars.
 	var	pos = 0, lastPos = 0,
