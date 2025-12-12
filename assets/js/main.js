@@ -37,19 +37,22 @@
             {
                 "path": "images/Seguinot_meander-melt-water.jpg",
                 "alignment": "center",
-                "credit": "Julien Seguinot",
+                "by": "Julien Seguinot",
+                "url": "https://imaggeo.egu.eu/view/13610/",
                 "license": "CC-BY-SA-3.0",
             },
             {
                 "path": "images/Gilbert_clouds-Antarctica.png",
                 "alignment": "center",
-                "credit": "Ella Gilbert",
+                "by": "Ella Gilbert",
+                "url": "https://imaggeo.egu.eu/view/14065/",
                 "license": "CC-BY-SA-3.0",
             },
             {
                 "path": "images/USFS_fire_Alaska.jpg",
                 "alignment": "center",
-                "credit": "US Forest Service",
+                "by": "US Forest Service",
+                "url": "https://commons.wikimedia.org/wiki/File:Funny_River_Fire_Alaska.jpg",
                 "license": "public domain",
             },
         ];
@@ -70,12 +73,16 @@
 	};
 
         // Credit for the background image
-        var credit = "Background image: ";
+        var credit = "Background image";
         if (possible_images[which_image].license != "public domain")
-            credit += "&copy; ";
-        credit += possible_images[which_image].credit;
-        credit += " (" + possible_images[which_image].license + ")";
-        document.getElementById("ID_bg-image-credit").innerHTML = credit;
+            credit += " &copy; ";
+        else
+            credit += " by ";
+        credit += possible_images[which_image].by;
+        credit = '<a href="' + possible_images[which_image].url + '">' + credit + "</a>";
+        var license = possible_images[which_image].license;
+        license = '<a href="https://spdx.org/licenses/' + license + '.html">' + license + "</a>";
+        document.getElementById("ID_bg-image-credit").innerHTML = credit + " (" + license + ")";
 
 	// Vars.
 	var	pos = 0, lastPos = 0,
