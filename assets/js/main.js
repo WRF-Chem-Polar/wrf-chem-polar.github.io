@@ -37,12 +37,20 @@
             {
                 "path": "images/Seguinot_meander-melt-water.jpg",
                 "alignment": "center",
-                "credit": "Julien Seguinot (CC-BY-SA-3.0)",
+                "credit": "Julien Seguinot",
+                "license": "CC-BY-SA-3.0",
             },
             {
                 "path": "images/Gilbert_clouds-Antarctica.png",
                 "alignment": "center",
-                "credit": "Ella Gilbert (CC-BY-SA-3.0)",
+                "credit": "Ella Gilbert",
+                "license": "CC-BY-SA-3.0",
+            },
+            {
+                "path": "images/USFS_fire_Alaska.jpg",
+                "alignment": "center",
+                "credit": "US Forest Service",
+                "license": "public domain",
             },
         ];
 
@@ -62,7 +70,12 @@
 	};
 
         // Credit for the background image
-        document.getElementById("ID_bg-image-credit").innerHTML = "Background image: &copy; " + possible_images[which_image].credit;
+        var credit = "Background image: ";
+        if (possible_images[which_image].license != "public domain")
+            credit += "&copy; ";
+        credit += possible_images[which_image].credit;
+        credit += " (" + possible_images[which_image].license + ")";
+        document.getElementById("ID_bg-image-credit").innerHTML = credit;
 
 	// Vars.
 	var	pos = 0, lastPos = 0,
