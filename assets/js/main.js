@@ -40,11 +40,6 @@
                 "credit": "Julien Seguinot (CC-BY-SA-3.0)",
             },
             {
-                "path": "images/Sciarra_Antarctica.jpg",
-                "alignment": "center",
-                "credit": "Alessandra Sciarra (CC-BY-3.0)",
-            },
-            {
                 "path": "images/Gilbert_clouds-Antarctica.png",
                 "alignment": "center",
                 "credit": "Ella Gilbert (CC-BY-SA-3.0)",
