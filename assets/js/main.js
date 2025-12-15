@@ -81,7 +81,10 @@
         credit += possible_images[which_image].by;
         credit = '<a href="' + possible_images[which_image].url + '">' + credit + "</a>";
         var license = possible_images[which_image].license;
-        license = '<a href="https://spdx.org/licenses/' + license + '.html">' + license + "</a>";
+        if (license == "public domain")
+            license = '<a href="https://en.wikipedia.org/wiki/Public_domain">public domain</a>';
+        else
+            license = '<a href="https://spdx.org/licenses/' + license + '.html">' + license + "</a>";
         document.getElementById("ID_bg-image-credit").innerHTML = credit + " (" + license + ")";
 
 	// Vars.
