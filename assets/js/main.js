@@ -55,6 +55,13 @@
                 "url": "https://commons.wikimedia.org/wiki/File:Funny_River_Fire_Alaska.jpg",
                 "license": "public domain",
             },
+            {
+                "path": "images/Tjernstrom_melt-ponds.jpg",
+                "alignment": "center",
+                "by": "Michael Tjernström",
+                "url": "https://imaggeo.egu.eu/view/4134/",
+                "license": "CC-BY-ND-3.0",
+            },
         ];
 
         var which_image = Math.floor(Math.random() * possible_images.length);
