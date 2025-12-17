@@ -36,3 +36,12 @@
  - Source: https://imaggeo.egu.eu/view/4134/
  - License: Creative Commons Attribution-NoDerivs 3.0 Unported (CC-BY-ND-3.0)
  - Credit: Michael Tjernström (distributed via imaggeo.egu.eu)
+
+## Kelley_Arctic-ice.jpg
+
+ - Name: A photograph of the Arctic ice
+ - Location: Somewhere in the Arctic
+ - Date: 7 August 2011
+ - Source: https://en.wikipedia.org/wiki/File:Arctic_ice.jpg
+ - License: Creative Commons Attribution 2.0 Generic (CC-BY-2.0)
+ - Credit: Patrick Kelley

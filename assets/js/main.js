@@ -62,6 +62,13 @@
                 "url": "https://imaggeo.egu.eu/view/4134/",
                 "license": "CC-BY-ND-3.0",
             },
+            {
+                "path": "images/Kelley_Arctic-ice.jpg",
+                "alignment": "center",
+                "by": "Patrick Kelley",
+                "url": "https://en.wikipedia.org/wiki/File:Arctic_ice.jpg",
+                "license": "CC-BY-2.0",
+            },
         ];
 
         var which_image = Math.floor(Math.random() * possible_images.length);
