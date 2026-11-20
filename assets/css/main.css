@@ -350,6 +350,19 @@ hr {
   hr.major {
     margin: 3em 0; }
 
+/* Organization of the main page */
+
+
+#index_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.index_content_block {
+    width: min(900px, 80%);
+}
+
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
