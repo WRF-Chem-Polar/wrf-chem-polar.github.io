@@ -352,7 +352,6 @@ hr {
 
 /* Organization of the main page */
 
-
 #index_content {
     display: flex;
     flex-direction: row;
@@ -361,6 +360,10 @@ hr {
 
 .index_content_block {
     width: min(900px, 80%);
+}
+
+#publication_list li {
+    margin: 10px 0;
 }
 
 /* Section/Article */
